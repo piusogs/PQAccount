@@ -1,0 +1,37 @@
+CREATE TABLE Accounts (
+    Name               STRING (5, 30) UNIQUE ON CONFLICT FAIL
+                                      NOT NULL,
+    AccountCode        STRING (5, 30) PRIMARY KEY
+                                      NOT NULL ON CONFLICT FAIL
+                                      UNIQUE,
+    DateCreated        DATE           NOT NULL,
+    Balance            DOUBLE,
+    AccountDescription TEXT (10, 200),
+    IsOpen             BOOLEAN        DEFAULT (1),
+    Currency           INT            DEFAULT (1) 
+);
+
+
+CREATE TABLE Expenditure (
+    Name        STRING (5, 30) UNIQUE ON CONFLICT FAIL
+                               NOT NULL,
+    ExpenseCode STRING         PRIMARY KEY
+                               UNIQUE
+                               NOT NULL ON CONFLICT FAIL,
+    Accountid   STRING         REFERENCES Accounts (AccountCode) 
+                               NOT NULL,
+    Amount      DOUBLE,
+    DateAdded   DATE           NOT NULL,
+    ClosingDate,
+    IsSettled   BOOLEAN        DEFAULT (0) 
+);
+
+UPDATE Accounts
+   SET Name = 'Name',
+       AccountCode = 'AccountCode',
+       DateCreated = 'DateCreated',
+       Balance = 'Balance',
+       AccountDescription = 'AccountDescription',
+       IsOpen = 'IsOpen',
+       Currency = 'Currency'
+ WHERE AccountCode = ;

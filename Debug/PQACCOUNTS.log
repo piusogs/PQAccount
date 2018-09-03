@@ -1,0 +1,26 @@
+﻿Build started 12/1/2017 1:35:22 AM.
+     1>Project "C:\Users\DELL\Documents\Visual Studio 2015\Projects\PQACCOUNTS\PQACCOUNTS\PQACCOUNTS.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\PQACCOUNTS.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt -D_SCL_SECURE_NO_WARNINGS Account.cpp Expenditure.cpp PQACCOUNTS.cpp
+         Account.cpp
+         Generating Code...
+     1>c:\users\dell\documents\visual studio 2015\projects\pqaccounts\pqaccounts\account.cpp(246): warning C4715: '<lambda_52e5a6b2cbaa449a3543ab513a782fde>::operator()': not all control paths return a value
+     1>c:\users\dell\documents\visual studio 2015\projects\pqaccounts\pqaccounts\account.cpp(223): warning C4715: '<lambda_45104fcb8e3885a15d68f8bf122f98f4>::operator()': not all control paths return a value
+     1>c:\users\dell\documents\visual studio 2015\projects\pqaccounts\pqaccounts\account.cpp(235): warning C4715: '<lambda_1e6df22e1ef3a87a3d4e5b5aface3906>::operator()': not all control paths return a value
+         Skipping... (no relevant changes detected)
+         PQACCOUNTS.cpp
+         Expenditure.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DELL\Documents\Visual Studio 2015\Projects\PQACCOUNTS\Debug\PQACCOUNTS.exe" /INCREMENTAL /NOLOGO "libboost_date_time-vc140-mt-gd-1_64.lib" sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\DELL\Documents\Visual Studio 2015\Projects\PQACCOUNTS\Debug\PQACCOUNTS.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DELL\Documents\Visual Studio 2015\Projects\PQACCOUNTS\Debug\PQACCOUNTS.lib" /MACHINE:X86 Debug\PQACCOUNTS.res
+         Debug\Account.obj
+         Debug\Expenditure.obj
+         Debug\Money.obj
+         Debug\PQACCOUNTS.obj
+         Debug\stdafx.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         PQACCOUNTS.vcxproj -> C:\Users\DELL\Documents\Visual Studio 2015\Projects\PQACCOUNTS\Debug\PQACCOUNTS.exe
+     1>Done Building Project "C:\Users\DELL\Documents\Visual Studio 2015\Projects\PQACCOUNTS\PQACCOUNTS\PQACCOUNTS.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:18.48
